@@ -64,7 +64,7 @@ function subTestModule (test, pModuleName)
     test.ok('test' in moduleInstance, 'module should have a test method');
 
     // Call the testing mothod on the module instance
-    test.ok(moduleInstance.test() == pModuleName, 'module test methode should return module path');
+    test.ok(moduleInstance.test() == pModuleName, 'module test method should return module path');
 
     // Ok
     test.done();
@@ -73,9 +73,10 @@ function subTestModule (test, pModuleName)
 // Define test routines
 exports.jsModulePath = {
 
+    // First test, load output file and test integrity
     outputFileValidity: function (test)
     {
-        console.log("Testing output JS file loading and integrity ...");
+        console.log("\nTesting output JS file loading and integrity ...");
 
         // Load the file and test JS validity
         test.ok(loadOutputFile(), 'should load the proceeded js file');
@@ -85,7 +86,7 @@ exports.jsModulePath = {
     // Test first module syntax
     testModule1: function(test)
     {
-        console.log("Testing injection through first define syntax ...");
+        console.log("\nTesting injection through first define syntax ...");
 
         subTestModule(test, 'lib/folder/another/ModuleName1');
     },
@@ -93,7 +94,7 @@ exports.jsModulePath = {
     // Test first module syntax
     testModule2: function(test)
     {
-        console.log("Testing injection through second define syntax ...");
+        console.log("\nTesting injection through second define syntax ...");
 
         subTestModule(test, 'lib/folder/another/ModuleName2');
     },
@@ -101,7 +102,7 @@ exports.jsModulePath = {
     // Test first module syntax
     testModule3: function(test)
     {
-        console.log("Testing injection through third define syntax ...");
+        console.log("\nTesting injection through third define syntax ...");
 
         subTestModule(test, 'lib/folder/another/ModuleName3');
     }
