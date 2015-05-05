@@ -1,5 +1,5 @@
 {
-  "name": "grunt-contrib-typescript-module-path",
+  "name": "grunt-js-module-path",
   "version": "1.0.0",
   "description": "Grunt plugin adding file path to each AMD modules",
   "scripts": {
