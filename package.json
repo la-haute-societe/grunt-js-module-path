@@ -1,6 +1,6 @@
 {
   "name": "grunt-js-module-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grunt plugin adding file path to each AMD modules",
   "scripts": {
     "test": "grunt test --stack"
@@ -12,6 +12,7 @@
   "keywords": [
     "grunt",
     "plugin",
+    "gruntplugin",
     "typescript",
     "javascript",
     "js",
